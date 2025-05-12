@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/hasan', function () {
+    return view('Profile');
+});
+
+Route::get('/hello', function () {
+    $name = "Good morning";
+    return view('hello')-> with('oo', $name);
+});
