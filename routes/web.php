@@ -27,3 +27,8 @@ Route::get('/hello', function () {
     $names = ['Hasan', 'Sami', 'Rafiq', 'Rafi', 'Samiul', 'Samiul','Hasan','Samiul',' Hasan ','Rafiq'];
     return view('hello')-> with('oo', $name)-> with('value', $value)-> with('employee', $names);
 });
+
+
+Route::get('/amg', [App\Http\Controllers\Controller::class, 'myBookings']);
+Route::get('/os', [App\Http\Controllers\bookingController::class, 'myBookings']);
+Route::get('/sayhasan/{name}',[App\Http\Controllers\bookingController::class, 'sayhasan']);
