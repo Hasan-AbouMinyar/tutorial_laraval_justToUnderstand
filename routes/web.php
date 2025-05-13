@@ -24,5 +24,6 @@ Route::get('/hasan', function () {
 Route::get('/hello', function () {
     $name = "Good morning";
     $value = 10;
-    return view('hello')-> with('oo', $name)-> with('value', $value);
+    $names = ['Hasan', 'Sami', 'Rafiq', 'Rafi', 'Samiul', 'Samiul','Hasan','Samiul',' Hasan ','Rafiq'];
+    return view('hello')-> with('oo', $name)-> with('value', $value)-> with('employee', $names);
 });
