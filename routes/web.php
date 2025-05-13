@@ -23,5 +23,6 @@ Route::get('/hasan', function () {
 
 Route::get('/hello', function () {
     $name = "Good morning";
-    return view('hello')-> with('oo', $name);
+    $value = 10;
+    return view('hello')-> with('oo', $name)-> with('value', $value);
 });
