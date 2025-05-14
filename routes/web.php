@@ -33,3 +33,5 @@ Route::get('/hello', function () {
 Route::get('/sayhasan/{name}',[App\Http\Controllers\bookingController::class, 'sayhasan']);
 
 Route::get('/login',[App\Http\Controllers\bookingController::class, 'login']);
+
+Route::get('/h/{name}', [App\Http\Controllers\bookingController::class, 'sayHello']);
