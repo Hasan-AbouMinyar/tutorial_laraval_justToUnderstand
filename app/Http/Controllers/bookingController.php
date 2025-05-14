@@ -11,7 +11,7 @@ class bookingController extends Controller
     return $request->all();  
 }
 
-    function sayhasan($name) {
-          return "Hello $name";
+    function sayhasan() {
+          return "Hello";
      }
 }
