@@ -29,8 +29,7 @@ Route::get('/hello', function () {
 });
 
 
-Route::get('/amg', [App\Http\Controllers\Controller::class, 'myBookings']);
-Route::get('/os', [App\Http\Controllers\bookingController::class, 'myBookings']);
+
 Route::get('/sayhasan/{name}',[App\Http\Controllers\bookingController::class, 'sayhasan']);
 
 Route::get('/login',[App\Http\Controllers\bookingController::class, 'login']);

@@ -11,11 +11,23 @@ class bookingController extends Controller
 //     return "Name: " . $request->input('name');
 // }
 
-    function sayhasan($n) {
-          return response()->json(['data'=>['name'=> $n]]);
-     }
+    function sayHello($moto) {
+        return view('welcomePage')->with('nameMoto', $moto);
+    }
+    
 
-     function login(){
-        return "<h1>Login Page</h1>";
-     }
+    
+    // function sayhasan($n) {
+    //       return response()->json(['data'=>['name'=> $n]]);
+    //  }
+
+
+//     function sayhasan($n) {
+//           return "hi " . $n;
+//      }
+
+
+//      function login(){
+//         return "<h1>Login Page</h1>";
+//      }
 }
